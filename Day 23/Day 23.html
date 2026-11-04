@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 24</title>
+</head>
+<body>
+    <script>
+        let a=['html','css','js']
+        let b=[...a];
+        b[0]='react'
+
+        console.log(b)
+        console.log(a)
+
+        let obj1={name:'jessy'}
+        let obj2={age:25}
+        let obj3={...obj1,...obj2,city:'vizag'}
+        console.log(obj3)
+
+        let frontend=['html','css']
+        let backend=['springboar','flask']
+        let fullstack=[...frontend,...backend,'react']
+        console.log(fullstack)
+
+        let str='Hello world'
+        let newstr=[...str]
+        console.log(newstr)
+
+        let products=[
+            {name:'laptop',price:60000,rating:4.5},
+            {name:'laptop',price:60000,rating:4.5},
+            {name:'One plus earbuds',price:2000,rating:4.5},
+            {name:'Keuboard price',price:1500,rating:3.9},
+            {name:'smart watch',price:8000,rating:4.6},
+        ]
+        let updatedproducts=products.map((val)=>{
+            return {...val,discountedprice:val.price*0.9,dealer:'john'}
+        })
+        console.log(updatedproducts)
+
+        let highratedproducts=updatedproducts.filter((val,ind)=>{
+            return val.rating>=4.5
+        })
+        console.log(highratedproducts)
+
+        let sortbyrating=[...updatedproducts].sort((a,b)=>{
+            return b.rating-a.rating
+        })
+        console.log(sortbyrating)
+
+        let sortbyprice=[...updatedproducts].sort((a,b)=>{
+            return a.price-b.price
+        })
+        console.log(sortbyprice)
+
+        let total=products.reduce((acc,val)=>{
+            return acc+val.price
+        },0)
+        console.log(total)
+
+        let count=products.reduce((acc,val)=>{
+            return acc+1
+        },0)
+        console.log(count)
+
+        let name='prudhvi'
+        localStorage.setItem('cdgstudent',name)
+
+        let data=localStorage.getItem('cdgstudent')
+        console.log(data)
+    </script>
+</body>
+</html>
