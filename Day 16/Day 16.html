@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 Task</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        #container div{
+            background: lightsalmon;
+            padding: 3%;
+        }
+    </style>
+</head>
+   <div id="container"></div>
+<body>
+<script>
+    
+        // let name=prompt('Enter your Name')
+        // let marks=+prompt('Enter your Marks')
+        // console.log(name,marks)
+        // console.log(typeof name,typeof marks)
+        // let grade=''
+        // if(marks>75){
+        //     grade='A'
+        // }else if(marks>50){
+        //     grade='B'
+        // }else if(marks>35){
+        //     grade='C'
+        // }else{
+        //     grade='F'
+        // }
+        // console.log(`Hello ${name} your grade is ${grade} for your ${marks} marks`)
+        
+        // let container=document.getElementById('container')
+        // console.log(container)
+        // container.innerHTML=`Hello ${name} your grade is ${grade} for your ${marks} marks`
+        
+        
+
+
+
+//         for (let i=0;i<=10;i++){
+//             console.log(i);
+//         }
+//         let j=10;
+//         while (j <= 20) {
+//             console.log(j);
+//             j++;
+//         }
+
+//         while (true) {
+//             console.log("praposed to a girl");
+//             let answer = prompt("do you love me");
+//             if (answer == "yes"){
+//                 console.log("mission successful");
+//                 break;
+//             }
+//             console.log("one more try");
+//         }
+//         let k = 10
+// do{
+// console.log(k)
+// k++
+// }
+// while(k<10)
+
+// let str='Hello'
+// let arr=['html','Css','Js']
+// let obj={
+// name:'john',
+// age=23;
+// }
+// for(let i in str){
+// console.log(i);
+// console.log(str[i]);
+// }
+// for(let i in arr){
+// console.log(i);
+// console.log(arr[i]);
+// }
+// for(let i in obj){
+// console.log(i);
+// console.log(obj[i]);
+// }
+// let str='hello world'
+// for (let i of str){
+//     console.log(i)
+// }
+// let arr=['Html','Css','Js']
+// for (let i of arr){
+//     console.log(i)
+// }
+let students=[
+    {
+        name:'John',
+        marks:90
+    },
+    {
+        name:'Jessy',
+        marks:40
+    },
+    {
+        name:'Jack',
+        marks:90
+    },
+    {
+        name:'Jim',
+        marks:30
+    }
+]
+for (let i of students){
+    console.log(i)
+let grade=''
+    if(i.marks>75){
+        grade='A'
+    }else if(i.marks>50){
+        grade='B'
+    }
+    else if(i.marks>35){
+        grade='B'
+    }else{
+        grade='F'
+    }
+    console.log(grade)
+    let container=document.getElementById('container')
+    console.log(container)
+    container.innerHTML+=`<div>Hello ${i.name} your grade is ${grade} for your ${i.marks} marks </div>`;
+}
+</script>
+</body>
+</html>
