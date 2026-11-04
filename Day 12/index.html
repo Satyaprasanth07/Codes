@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 Index File</title>
+    <style>
+        header{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+        h1,p{
+            text-align: center;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        section img{
+            width: 100%;
+            height: 70vh;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 3%;
+            gap: 30px;
+        }
+        @media screen and (width<720px){
+        section{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media screen and (width<592px){
+        section,footer{
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Icon</h1>
+        <h1>My food</h1>
+        <p>Mail</p>
+    </header>
+    <section>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/6416558/pexels-photo-6416558.jpeg?_gl=1*3cybsx*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwNDckajQwJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/30107969/pexels-photo-30107969.jpeg?_gl=1*mf1g39*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwNjQkajIzJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/17942170/pexels-photo-17942170.jpeg?_gl=1*1uyo6nt*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwODUkajIkbDAkaDA." alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/30341510/pexels-photo-30341510.jpeg?_gl=1*ore4yk*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMxMDIkajYwJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+    </section>
+    <section>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/6416558/pexels-photo-6416558.jpeg?_gl=1*3cybsx*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwNDckajQwJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/30107969/pexels-photo-30107969.jpeg?_gl=1*mf1g39*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwNjQkajIzJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/17942170/pexels-photo-17942170.jpeg?_gl=1*1uyo6nt*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMwODUkajIkbDAkaDA." alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+        <div class="card">
+            <div><img src="https://images.pexels.com/photos/30341510/pexels-photo-30341510.jpeg?_gl=1*ore4yk*_ga*MTcxNDQ0NzAwMy4xNzkwODU3OTY3*_ga_8JE65Q40S6*czE3OTEwMDMwMjckbzIkZzEkdDE3OTEwMDMxMDIkajYwJGwwJGgw" alt=""></div>
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just Some random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, itaque!</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h1>Footer</h1>
+            <p>Praesant tincidunt sed tellus ut rutram.</p>
+            <p>Powered by w3.css</p>
+        </div>
+        <div>
+            <h1>Blog posts</h1>
+            <p>Praesant tincidunt sed tellus ut rutram.</p>
+            <p>Powered by w3.css</p>
+        </div>
+        <div>
+            <h1>Popular tags</h1>
+            <a href="">Travel</a> <a href="">NewYork</a>
+            <a href="">Travel</a> <a href="">NewYork</a>
+            <a href="">Travel</a> <a href="">NewYork</a>
+            <br><a href="">Travel</a> <a href="">NewYork</a>
+        </div>
+        
+    </footer>
+</body>
+</html>
